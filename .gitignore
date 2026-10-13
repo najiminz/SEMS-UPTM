@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+*.log
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# UAT tester sign-in details (generated locally, never committed)
+docs/uat/private/
+
+# Kept locally, not published
+PROJECT_CONTEXT.md
+scripts/
+sample-data/
+start-uat.bat

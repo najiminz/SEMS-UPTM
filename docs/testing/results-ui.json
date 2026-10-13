@@ -1,0 +1,50 @@
+{
+ "NFT-P01": {
+  "pass": true,
+  "actual": "Loaded in 1.19 s"
+ },
+ "NFT-U01": {
+  "pass": true,
+  "actual": "Layout correct, menu visible, no sideways scrolling, 0 console errors"
+ },
+ "NFT-P02": {
+  "pass": true,
+  "actual": "Loaded in 1.17 s (Showing 25 of 25 proposals in the queue)"
+ },
+ "NFT-P04": {
+  "pass": true,
+  "actual": "Loaded with charts in 1.01 s"
+ },
+ "NFT-U02": {
+  "pass": true,
+  "actual": "No sideways scrolling (0 px extra); menu opened from the icon: true"
+ },
+ "NFT-U03": {
+  "pass": true,
+  "actual": "7 fields fit the 375 px screen with no sideways scrolling; text 16px, so the phone does not zoom in"
+ },
+ "NFT-U04": {
+  "pass": true,
+  "actual": "Dark mode on 5 pages: 818 text elements, all meet WCAG AA (lowest 4.7:1)"
+ },
+ "NFT-U05": {
+  "pass": true,
+  "actual": "5 fields flagged; message under Event Name: \"Give the event a name, e.g. \"Cyber Security Awareness Program\".\""
+ },
+ "UNIT-4": {
+  "pass": true,
+  "actual": "Stayed on step 1; focus moved to the first error (#title)"
+ },
+ "UNIT-9": {
+  "pass": true,
+  "actual": "Form shows the event name, applicant, student ID, organiser and venue from the proposal"
+ },
+ "UNIT-8": {
+  "pass": true,
+  "actual": "Approve disabled with 0 and 2 boxes ticked (true, true); enabled with all 3 (true); API refuses incomplete sign-off (HTTP 400)"
+ },
+ "SYS-2": {
+  "pass": true,
+  "actual": "Form generated correctly; approved after ticking all three signatures; sign-off recorded (status \"approved\")"
+ }
+}

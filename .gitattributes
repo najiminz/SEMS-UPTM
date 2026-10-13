@@ -1,0 +1,13 @@
+# Never convert line endings in binary files (core.autocrlf would otherwise treat some PDFs as text)
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.docx binary
+*.xlsx binary
+*.woff2 binary
+
+# Windows batch files must keep CRLF
+*.bat  text eol=crlf

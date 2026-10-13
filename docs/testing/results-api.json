@@ -1,0 +1,130 @@
+{
+ "NFT-P03": {
+  "pass": true,
+  "actual": "Response in 0.09 s (HTTP 201), both PDFs stored"
+ },
+ "UNIT-5": {
+  "pass": true,
+  "actual": "Total saved as RM 420.00 (50 × 6.00 + 1 × 120.00 = 420.00)"
+ },
+ "NFT-S06": {
+  "pass": true,
+  "actual": "HTTP 400: \"File extension \".exe\" is not allowed\""
+ },
+ "UNIT-6": {
+  "pass": true,
+  "actual": "PDFs accepted (2 stored); .exe refused with HTTP 400"
+ },
+ "NFT-S01": {
+  "pass": true,
+  "actual": "HEPA proposal list: HTTP 403; user list: HTTP 403"
+ },
+ "INT-2": {
+  "pass": true,
+  "actual": "Proposal appeared in the HEPA queue as Submitted"
+ },
+ "NFT-S05": {
+  "pass": true,
+  "actual": "Club B member: HTTP 403 \"You do not have access to this proposal\""
+ },
+ "INT-4": {
+  "pass": true,
+  "actual": "Same club: view 200, edit 200; other club edit: 403"
+ },
+ "NFT-R01": {
+  "pass": true,
+  "actual": "Reopened draft: venue \"Test Hall\", 2 budget items, 1 document kept"
+ },
+ "UNIT-7": {
+  "pass": true,
+  "actual": "HTTP 400: \"A remark is required\""
+ },
+ "NFT-S02": {
+  "pass": true,
+  "actual": "HTTP 400; status stayed \"under_review\""
+ },
+ "INT-3": {
+  "pass": true,
+  "actual": "Club saw \"Action required\": true; resubmitted (HTTP 200) as version 2; back in HEPA queue: true"
+ },
+ "NFT-R02": {
+  "pass": true,
+  "actual": "Version 2; HEPA remark kept: true"
+ },
+ "INT-5": {
+  "pass": true,
+  "actual": "Approve: HTTP 200; event on calendar: true"
+ },
+ "SYS-1": {
+  "pass": true,
+  "actual": "Timeline: submitted → review_started → queried → resubmitted → approved recorded in order; final status approved"
+ },
+ "SYS-2-API": {
+  "pass": true,
+  "actual": "Sign-off recorded by ZZ HEPA"
+ },
+ "INT-7": {
+  "pass": true,
+  "actual": "Report saved (HTTP 201); shown in HEPA reports: true"
+ },
+ "INT-6": {
+  "pass": true,
+  "actual": "No reason: HTTP 400; with reason: 200; removed from calendar: true; HEPA approval kept: true"
+ },
+ "INT-8": {
+  "pass": true,
+  "actual": "8 entries for the test proposal, each with user, IP address (::1) and result"
+ },
+ "UNIT-10": {
+  "pass": true,
+  "actual": "HTTP 400: \"You cannot change your own role\""
+ },
+ "NFT-S03": {
+  "pass": true,
+  "actual": "13/13 passwords stored as bcrypt hashes (cost 12); no plain text"
+ },
+ "NFT-R03": {
+  "pass": true,
+  "actual": "Before: HTTP 200; after deactivation the same session got HTTP 403 \"Your account has been deactivated. Please contact the administrator.\""
+ },
+ "NFT-R04": {
+  "pass": true,
+  "actual": "Change: HTTP 200; other device: HTTP 401; this device (new token): HTTP 200"
+ },
+ "UNIT-1": {
+  "pass": true,
+  "actual": "Empty: \"Please fill in all required fields.\"; invalid email: \"Please enter a valid email address.\"; no account created"
+ },
+ "UNIT-2": {
+  "pass": true,
+  "actual": "Wrong code: \"Incorrect code. Please try again.\"; correct code: HTTP 201, account created"
+ },
+ "INT-1": {
+  "pass": true,
+  "actual": "Code email sent through Gmail SMTP (HTTP 200); verification created the account (HTTP 201) and signed in as club_committee"
+ },
+ "SYS-3": {
+  "pass": true,
+  "actual": "Code email sent (HTTP 200); code verified, password reset; new password: HTTP 200; old password: HTTP 401"
+ },
+ "SYS-4": {
+  "pass": true,
+  "actual": "HEPA account created (201) and signed in (200); club created (201); member assigned (200) and their proposal moved to the club: true"
+ },
+ "SYS-5": {
+  "pass": true,
+  "actual": "CSV (HTTP 200) with 1 row(s); every row is PROPOSAL_APPROVED: true"
+ },
+ "SYS-6": {
+  "pass": true,
+  "actual": "Analytics approved (Oct 2026) = 1; database count = 1"
+ },
+ "NFT-S04": {
+  "pass": true,
+  "actual": "5 wrong passwords (401, 401, 401, 401, 429); correct password then refused: HTTP 429 \"Too many failed attempts. This account is locked for 15 more minutes. You can also unlock it right away with \"Forgot password\".\"; ACCOUNT_LOCKED logged"
+ },
+ "UNIT-3": {
+  "pass": true,
+  "actual": "Locked after 5 wrong passwords: \"Too many failed attempts. This account is locked for 15 more minutes. You can also unlock it right away with \"Forgot password\".\""
+ }
+}

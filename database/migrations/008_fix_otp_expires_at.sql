@@ -1,0 +1,4 @@
+USE sems_uptm;
+
+ALTER TABLE otp_codes
+  MODIFY expires_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;

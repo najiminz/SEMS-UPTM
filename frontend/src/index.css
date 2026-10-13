@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #fcebec;
+  --color-brand-100: #f9d7da;
+  --color-brand-200: #f2afb6;
+  --color-brand-300: #e67d89;
+  --color-brand-400: #d8455a;
+  --color-brand-500: #d11f3c;
+  --color-brand-600: #c8102e;
+  --color-brand-700: #a80d26;
+  --color-brand-800: #7d0a1c;
+  --color-brand-900: #520712;
+
+  --color-navy-50: #e6ecf2;
+  --color-navy-100: #ccd9e6;
+  --color-navy-200: #99b3cc;
+  --color-navy-300: #6690b8;
+  --color-navy-400: #3d74a6;
+  --color-navy-500: #1d5990;
+  --color-navy-600: #0a4780;
+  --color-navy-700: #003b70;
+  --color-navy-800: #002b52;
+  --color-navy-900: #001b34;
+
+  --color-surface: #ffffff;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #172033;
+}
+
+.dark {
+  --color-surface: #0f172a;
+  --color-slate-50: #020617;
+  --color-slate-100: #1e293b;
+  --color-slate-200: #334155;
+  --color-slate-300: #475569;
+  --color-slate-400: #8190a5;
+  --color-slate-500: #a3afc1;
+  --color-slate-600: #94a3b8;
+  --color-slate-700: #cbd5e1;
+  --color-slate-800: #e2e8f0;
+  --color-slate-900: #f8fafc;
+}
+
+.dark body {
+  background-color: var(--color-slate-50);
+  color: var(--color-slate-900);
+}
+
+@media (max-width: 639.98px) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([aria-label^="Digit "]),
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes slide-in-right {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.slide-in-right { animation: slide-in-right 0.22s ease-out; }
+.fade-in { animation: fade-in 0.18s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .slide-in-right,
+  .fade-in { animation: none; }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  .dark {
+    --color-surface: #ffffff;
+    --color-slate-50: #f8fafc;
+    --color-slate-100: #f1f5f9;
+    --color-slate-200: #e2e8f0;
+    --color-slate-300: #cbd5e1;
+    --color-slate-600: #475569;
+    --color-slate-700: #334155;
+    --color-slate-800: #1e293b;
+    --color-slate-900: #0f172a;
+  }
+  body { background: #ffffff !important; }
+}
